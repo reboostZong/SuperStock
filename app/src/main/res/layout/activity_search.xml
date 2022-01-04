@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/search_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/searchbar"/>
+    <include
+        android:id="@+id/searchactivity_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_searchstock"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:id="@+id/searchactivity_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/stockmonitor_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/titlebar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/stockmonitor_stock_resume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/stockresume"/>
+
+            <LinearLayout
+                android:id="@+id/stockmonitor_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_below="@id/stockmonitor_stock_resume"
+                />
+
+            <ImageView
+                android:id="@+id/stockmonitor_time_index_chart"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_below="@id/stockmonitor_line"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/stockmonitor_line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_below="@id/stockmonitor_time_index_chart"
+                />
+
+            <include
+                android:id="@+id/stockmonitor_buy5sell5"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/stockmonitor_line2"
+                layout="@layout/buy5sell5"/>
+
+            <include
+                android:id="@+id/stockmonitor_kchart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/stockmonitor_line2"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/stockmonitor_buy5sell5"
+                android:layout_alignBottom="@id/stockmonitor_buy5sell5"
+                layout="@layout/kchart"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

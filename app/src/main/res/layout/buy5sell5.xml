@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="115dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/stockpreview_sell5_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell5_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/stockpreview_sell5"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卖5"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell4_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell5_num"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell4_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell5_price"
+        android:layout_toRightOf="@id/stockpreview_sell4"
+        android:layout_alignLeft="@id/stockpreview_sell5_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卖4"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell5"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell3_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell4_num"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell3_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell4_price"
+        android:layout_toRightOf="@id/stockpreview_sell3"
+        android:layout_alignLeft="@id/stockpreview_sell4_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卖3"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell4"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell2_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell3_num"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell2_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell3_price"
+        android:layout_toRightOf="@id/stockpreview_sell2"
+        android:layout_alignLeft="@id/stockpreview_sell3_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卖2"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell3"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell1_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell2_num"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell1_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell2_price"
+        android:layout_toRightOf="@id/stockpreview_sell1"
+        android:layout_alignLeft="@id/stockpreview_sell2_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卖1"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell2"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy1_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell1_num"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy1_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell1_price"
+        android:layout_toRightOf="@id/stockpreview_buy1"
+        android:layout_alignLeft="@id/stockpreview_sell1_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="买1"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_sell1"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy2_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy1_num"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy2_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy1_price"
+        android:layout_toRightOf="@id/stockpreview_buy2"
+        android:layout_alignLeft="@id/stockpreview_buy1_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="买2"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy1"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy3_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy2_num"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy3_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy2_price"
+        android:layout_toRightOf="@id/stockpreview_buy3"
+        android:layout_alignLeft="@id/stockpreview_buy2_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="买3"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy2"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy4_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy3_num"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy4_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy3_price"
+        android:layout_toRightOf="@id/stockpreview_buy4"
+        android:layout_alignLeft="@id/stockpreview_buy3_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="买4"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy3"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy5_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy4_num"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy5_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy4_price"
+        android:layout_toRightOf="@id/stockpreview_buy5"
+        android:layout_alignLeft="@id/stockpreview_buy4_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="买5"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_buy4"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>

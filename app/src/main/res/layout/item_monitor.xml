@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_monitor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/item_monitor_stock_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/item_monitor_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF9112"
+        android:textSize="14sp"
+        android:text="沪A"
+        android:layout_below="@id/item_monitor_stock_name"
+        android:layout_alignLeft="@id/item_monitor_stock_name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_border"/>
+
+    <TextView
+        android:id="@+id/item_monitor_stock_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:textSize="14sp"
+        android:layout_below="@id/item_monitor_stock_name"
+        android:layout_toRightOf="@id/item_monitor_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/item_monitor_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="现价"
+        android:textColor="@color/colorGray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="110dp"
+        />
+
+    <TextView
+        android:id="@+id/item_monitor_now_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        android:text="6637.69"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_monitor_now"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/item_monitor_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="涨幅"
+        android:textColor="@color/colorGray"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_monitor_now"
+        android:layout_marginLeft="65dp"
+        />
+
+    <TextView
+        android:id="@+id/item_monitor_percent_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        android:text="10.00%"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_monitor_percent"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/item_monitor_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="涨跌"
+        android:textColor="@color/colorGray"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_monitor_percent"
+        android:layout_marginLeft="65dp"
+        />
+
+    <TextView
+        android:id="@+id/item_monitor_diff_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        android:text="20.57"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_monitor_diff"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/item_monitor_thing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="事件:"
+        android:textColor="@color/colorGray"
+        android:layout_alignLeft="@id/item_monitor_now"
+        android:layout_alignBottom="@id/item_monitor_stock_num"
+        />
+
+    <TextView
+        android:id="@+id/item_monitor_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGreen"
+        android:layout_toRightOf="@id/item_monitor_thing"
+        android:layout_alignBottom="@id/item_monitor_thing"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Switch
+        android:id="@+id/item_monitor_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+</RelativeLayout>

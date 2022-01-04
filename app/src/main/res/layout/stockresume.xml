@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/stockpreview_now_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/stockpreview_price_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/stockpreview_now_price"
+        android:layout_below="@id/stockpreview_now_price"/>
+
+    <TextView
+        android:id="@+id/stockpreview_percent_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/stockpreview_now_price"
+        android:layout_toRightOf="@id/stockpreview_price_diff"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/stockpreview_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日最高"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="130dp"
+        />
+    <TextView
+        android:id="@+id/stockpreview_high_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/stockpreview_high"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日最低"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/stockpreview_high"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_low_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/stockpreview_low"
+        android:layout_below="@id/stockpreview_high_price"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开盘价格"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/stockpreview_low"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_start_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/stockpreview_start"
+        android:layout_below="@id/stockpreview_low_price"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="竞买价格"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/stockpreview_high_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_buy_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/stockpreview_buy"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="竞卖价格"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/stockpreview_low_price"
+        android:layout_below="@id/stockpreview_buy"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_sell_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/stockpreview_sell"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/stockpreview_buy_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_yestoday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昨日收盘"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/stockpreview_start_price"
+        android:layout_below="@id/stockpreview_sell"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_yestoday_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/stockpreview_yestoday"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/stockpreview_sell_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_deal_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成交股数"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/stockpreview_start"
+        android:layout_below="@id/stockpreview_start"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_deal_stock_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/stockpreview_deal_num"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/stockpreview_start_price"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_deal_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成交金额"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/stockpreview_deal_num"
+        android:layout_below="@id/stockpreview_deal_num"
+        />
+
+    <TextView
+        android:id="@+id/stockpreview_deal_stock_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/stockpreview_deal_price"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/stockpreview_deal_stock_num"
+        />
+
+</RelativeLayout>
