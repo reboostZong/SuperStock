@@ -23,6 +23,7 @@ import com.zcf.bean.Monitor;
 import com.zcf.bean.Stock;
 import com.zcf.constant.SuperStockConstant;
 import com.zcf.dao.StockDao;
+import com.zcf.util.MathUtils;
 import com.zcf.util.StockUtils;
 
 import java.io.ByteArrayOutputStream;
@@ -61,6 +62,16 @@ public class StockMonitorService extends Service {
      * 用于记录股票线程情况
      */
     private static List<String> stockThreadList = new ArrayList<>();
+
+    /**
+     * 买手数均值
+     */
+    private static Integer buyNumAvg = null;
+
+    /**
+     * 卖手数均值
+     */
+    private static Integer sellNumAvg = null;
 
     @Nullable
     @Override
@@ -234,6 +245,34 @@ public class StockMonitorService extends Service {
         sendBroadcast(intent);
 
         // 数据处理
+        handleData(stock);
+
+
+
+
+    }
+
+    /**
+     * 处理数据
+     * @param stock stock
+     */
+    private void handleData(Stock stock) {
+        if (stock == null) {
+            return;
+        }
+
+        Integer nowBuyNumAvg = MathUtils.average(stock.getBuy1Num(), stock.getBuy2Num(), stock.getBuy3Num(), stock.getBuy4Num(), stock.getBuy5Num());
+        Integer nowSellNumAvg = MathUtils.average(stock.getSell1Num(), stock.getSell2Num(), stock.getSell3Num(), stock.getSell4Num(), stock.getSell5Num());
+
+        // 更新买手数均值
+        if (nowBuyNumAvg != null) {
+            buyNumAvg = buyNumAvg == null ? nowBuyNumAvg : MathUtils.average(nowBuyNumAvg, buyNumAvg);
+        }
+
+        // 更新卖手数均值
+        if (nowSellNumAvg != null) {
+            sellNumAvg = sellNumAvg == null ? nowSellNumAvg : MathUtils.average(nowSellNumAvg, sellNumAvg);
+        }
 
 
 
